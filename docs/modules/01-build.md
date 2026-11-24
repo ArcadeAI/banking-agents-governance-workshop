@@ -1,6 +1,6 @@
 # Step 13 / 18: Start your agent
 
-**3:00 to 3:15pm ET (15 min). LangChain.** Items 1 to 5 are the floor; item 6, the skill, is cut
+**3:00 to 3:15pm ET (15 min). Sri, LangChain.** Items 1 to 5 are the floor; item 6, the skill, is cut
 at AI Summit NYC. The Deep Agent from the repository, wired to your project and serving on your
 laptop, with a real model through the LangSmith LLM Gateway and every run traced in your
 LangSmith workspace.
