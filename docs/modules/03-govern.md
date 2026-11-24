@@ -9,7 +9,9 @@ This block runs in the attendee portal at https://workshop.arcade.dev. Sign in t
 - **Turn on contextual access**: your own tenant, and the extension with three hooks wired into your project.
 - **Set your policies**: the Loan Desk policy, where approval requests go, and the requests as they land.
 - **End to end**: one request, three tools: approve the $15,500 loan, tell the room, mail the borrower.
-- **Make it safer**: ask for the $95,000 approval, and your own policy refuses it, routes it to a human and logs every step.
+- **Make it safer**: three asks. First ask the agent to read a loan file and quote its bank account number and tax ID: both come back as `[REDACTED]`, because the post-execution hook masks them before the model reads the file. Then ask for the $95,000 approval, and your own policy refuses it and routes it to a human. Once the approver says yes, ask again and it goes through. Every step is logged.
+
+That is the abstract's four guardrails, each done by hand: the agent acts as you, on your own authorization ([connect](./02-connect.md)); policy blocks the out-of-bounds action; a human approves the high-value one; and sensitive data is redacted before it reaches the model.
 
 Loan ids are per attendee: your two-digit seat number, then the last two digits of the loan's id, so LN-2291 reads LN-1491 in seat 14. The borrowers and amounts are the same for everyone.
 
