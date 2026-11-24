@@ -1,6 +1,8 @@
 # Deep Agents Loan Desk with Arcade
 
-> **Attending the workshop?** Everything you do on the day is in the attendee portal at https://arcadeworkshop.dev; the pages under [`docs/modules/`](./docs/modules/00-setup.md) only say which portal steps cover each block. The Quickstart below is for running the whole thing yourself, after the day.
+> **AI Summit NYC, December 10 2026:** this is the Arcade-only version of *Building & Governing Banking Agents: Who Is Your Agent Acting As?* Start with the [run of show](./docs/nyc-90-minutes.md) and the [pre-work](./docs/pre-work.md). The `arcade-langchain` branch is the same workshop with LangChain Deep Agents and LangSmith.
+>
+> **Attending the workshop?** Everything you do on the day is in the attendee portal at https://workshop.arcade.dev; the pages under [`docs/modules/`](./docs/modules/00-setup.md) only say which portal steps cover each block. The Quickstart below is for running the whole thing yourself, after the day.
 
 A loan officer asks a LangChain Deep Agent, in plain language, to approve a $95K loan for a second bakery location. The agent searches the loan book, reads the request and calls the approval tool as her. Arcade sends that call to this app's control plane before it runs, and the control plane refuses it: $95K is over her $50K approval authority. The refusal tells the agent how to escalate, the request reaches the one approver with enough authority in Slack, and once he approves, her retry goes through and the agent emails the borrower the outcome from her own Gmail. You get a decision the model could not talk its way around, with an audit row for every step on a live panel.
 
@@ -82,6 +84,8 @@ A limit written into a system prompt is a suggestion, and we measured how fragil
 
 The internals live in `docs/`, one page per question:
 
+- [`docs/nyc-90-minutes.md`](./docs/nyc-90-minutes.md): the 90-minute AI Summit NYC session: abstract, run of show, facilitator notes, instructor prep and open questions.
+- [`docs/pre-work.md`](./docs/pre-work.md): what attendees install and sign up for before the day, so the 90 minutes fit.
 - [`docs/architecture.md`](./docs/architecture.md): how the four control points work, the two OAuth hops and which mechanism answers each, and what lives where in the repo.
 - [`docs/configuration.md`](./docs/configuration.md): what `/health` reports, which Arcade project `setup-arcade` writes to, the port, rotating the session secret, and what `bun run reset` puts back and what it keeps.
 - [`docs/faq.md`](./docs/faq.md): why the limits live in hooks, why the Slack DM comes from Alice, why Bun, using another model, and what we measured against a real Arcade project.
@@ -94,7 +98,7 @@ The internals live in `docs/`, one page per question:
 - [`docs/agent.md`](./docs/agent.md): how the agent and Arcade fit together: who the caller is, how tools are selected, and what happens when a tool needs authorizing.
 - [`auth-config/`](./auth-config/README.md): everything registered at Arcade, one copy-paste JSON body each: the custom `app-identity` provider for the loan API, the custom verifier and the hooks, and the optional User Source and gateway. `setup-arcade` sends the same bodies, and a test keeps them equal.
 - [`api/`](./api/server.ts): the loan REST API, the bank's system of record, served under `/bank`.
-- [`docs/modules/00-setup.md`](./docs/modules/00-setup.md): the workshop's agenda, one page per block: setup, build (LangChain), connect and govern (Arcade), observe (LangChain), wrap-up. Attendees do the blocks in the portal at https://arcadeworkshop.dev; each page lists the portal steps that cover it.
+- [`docs/modules/00-setup.md`](./docs/modules/00-setup.md): the workshop's agenda, one page per block: setup, build (LangChain), connect and govern (Arcade), observe (LangChain), wrap-up. Attendees do the blocks in the portal at https://workshop.arcade.dev; each page lists the portal steps that cover it.
 - [`docs/modules/03-govern.md`](./docs/modules/03-govern.md#take-it-home-the-same-governance-from-an-mcp-client): optional. The same tools and the same hooks from Claude Code, through an MCP gateway `setup-arcade --gateway` registers.
 - [`app/walkthrough/page.tsx`](./app/walkthrough/page.tsx): `/walkthrough`, the four acts as five diagrams from Arcade's outreach library with one line each, for the livestream and the recap.
 - [`docs/DOMAIN-SWAP.md`](./docs/DOMAIN-SWAP.md) walks through pointing the template at your own business system.

@@ -1,7 +1,13 @@
 # Observe and evaluate your agent, then deploy it
 
-**Build it · Hands-on. Owner: LangChain.** Portal steps 18 and 19, after "Make it safer" (17),
-before the wrap-up (20). Step 18 is one notebook. Step 19 is the terminal.
+**3:40 to 3:50pm ET (10 min). Shub.** At AI Summit NYC this block is the audit trail, not the
+notebook: open `/panel` and follow the $95K refusal through its Access, Pre and Post lanes. Each
+refusal the agent saw ends in a `[ref evt_…]` token, and that token is the id of its audit row,
+so the transcript and the log point at the same decision. The `arcade-langchain` branch adds
+the LangSmith trace of the same call.
+
+Everything below, the notebook (step 18) and the deploy (step 19), needs LangSmith and is for
+after the day.
 
 You built an agent and governed it. Now see what it did, score it, and watch the score move
 when the policy does. Nothing in Arcade's code or policy changes. The one thing that changes

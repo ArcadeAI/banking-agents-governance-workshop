@@ -1,8 +1,8 @@
 # Governing agent actions with policy hooks and human approval
 
-**10:45 to 11:30. Owner: Arcade.**
+**3:15 to 3:40pm ET (25 min). Shub.** The core of the session: protect its time.
 
-This block runs in the attendee portal at https://arcadeworkshop.dev. Sign in there with your email and the workshop code from your welcome mail; the portal provisions your own Arcade project, identity, loan book and policy, and walks you through the steps below. This page predates the portal and only says where its content went.
+This block runs in the attendee portal at https://workshop.arcade.dev. Sign in there with your email and the workshop code from your welcome mail; the portal provisions your own Arcade project, identity, loan book and policy, and walks you through the steps below. This page says which portal steps the block covers; the timings are for the 90-minute AI Summit NYC session ([run of show](../nyc-90-minutes.md)).
 
 ## In the portal
 

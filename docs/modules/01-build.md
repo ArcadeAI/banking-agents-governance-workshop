@@ -1,8 +1,10 @@
 # Step 13 / 18: Start your agent
 
-**Build it · Hands-on. Owner: LangChain.** The Deep Agent from the repository, wired to your
-project and serving on your laptop, with a real model through the LangSmith LLM Gateway and
-every run traced in your LangSmith workspace.
+**3:00 to 3:15pm ET (15 min). Shub.** Items 1 to 5 are the floor; item 6, the skill, is cut at
+AI Summit NYC. The Deep Agent from the repository, wired to your project and serving on your
+laptop. Model access for the Arcade-only session is still open ([run of show](../nyc-90-minutes.md#open-questions)):
+with no model configured the agent runs its scripted model, which still proves the sign-in,
+the Engine call and the hooks.
 
 The agent in `agent/` is a LangChain Deep Agent: a model in a loop with tools and a few built-in
 habits. It plans with a todo list, reads and writes files, and can load a skill, a file of
@@ -24,7 +26,7 @@ way the agent is four files: `agent.py`, which defines it; `instructions.md`, wh
 on step 2, fetch the latest `start` tag (it moves when the workshop team fixes something),
 check it out, and go into the agent.
 
-    $ cd deep-agents-governance
+    $ cd banking-agents-governance-workshop
     $ git fetch --tags --force
     $ git checkout start
     $ cd agent
