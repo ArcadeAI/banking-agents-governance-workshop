@@ -16,13 +16,14 @@ The workshop is 90 minutes, so the installs and accounts happen before you arriv
     git checkout start
     cd agent
     cp .env.example .env
-    uv sync
+    uv sync --group evals
 
 Running `uv sync` now means nothing downloads over the venue wifi.
 
 ## Make your accounts
 
 - **Arcade**: sign up at [arcade.dev](https://www.arcade.dev/), then create a project API key in the dashboard under API keys. You paste it in as `ARCADE_API_KEY` on the day.
+- **LangSmith**: an account with Managed Deep Agents on, from the workshop link in your welcome mail ([details](./modules/00-langsmith.md)). The model key is shared by the room; you bring none.
 - **Slack**: you join the workshop Slack from the portal on the day.
 
 ## Sign in to the portal
