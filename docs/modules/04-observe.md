@@ -1,6 +1,6 @@
 # Observe and evaluate your agent, then deploy it
 
-**3:40 to 3:50pm ET (10 min). LangChain.** At AI Summit NYC the room does step 18, items 1
+**3:40 to 3:50pm ET (10 min). Sri, LangChain.** At AI Summit NYC the room does step 18, items 1
 and 2 only: open the notebook and find the $95K refusal as a LangSmith trace, then match it to
 its row on `/panel` by the `[ref evt_…]` token at the end of the refusal. The dataset, the
 experiments (items 3 to 6) and the deploy (step 19) run on the instructor's screen, or after
