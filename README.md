@@ -1,6 +1,6 @@
 # Deep Agents Loan Desk with Arcade
 
-> **AI Summit NYC, December 10 2026:** this is the Arcade-only version of *Building & Governing Banking Agents: Who Is Your Agent Acting As?* Start with the [run of show](./docs/nyc-90-minutes.md) and the [pre-work](./docs/pre-work.md). The `arcade-langchain` branch is the same workshop with LangChain Deep Agents and LangSmith.
+> **AI Summit NYC, December 10 2026:** this is the Arcade + LangChain version of *Building & Governing Banking Agents: Who Is Your Agent Acting As?*, with LangChain Deep Agents and LangSmith. Start with the [run of show](./docs/nyc-90-minutes.md) and the [pre-work](./docs/pre-work.md). The `main` branch is the Arcade-only version.
 >
 > **Attending the workshop?** Everything you do on the day is in the attendee portal at https://workshop.arcade.dev; the pages under [`docs/modules/`](./docs/modules/00-setup.md) only say which portal steps cover each block. The Quickstart below is for running the whole thing yourself, after the day.
 

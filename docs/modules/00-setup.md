@@ -7,6 +7,6 @@ This block runs in the attendee portal at https://workshop.arcade.dev. Sign in t
 ## In the portal
 
 - **Welcome**: what you build today and what you leave with.
-- **Check your access**: git, uv and Python 3.12, this repository on the `start` tag, `agent/.env`, and your Arcade project key.
+- **Check your access**: git, uv and Python 3.12, this repository on the `start` tag, `agent/.env`, your Arcade project key, LangSmith access and the model key LangChain shares with the room.
 
 Do the access check before the day, from the [pre-work](../pre-work.md): the session is 90 minutes and the portal keeps your place.
