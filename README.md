@@ -84,6 +84,8 @@ A limit written into a system prompt is a suggestion, and we measured how fragil
 
 The internals live in `docs/`, one page per question:
 
+- [`docs/nyc-90-minutes.md`](./docs/nyc-90-minutes.md): the 90-minute AI Summit NYC session: abstract, run of show, facilitator notes, instructor prep and open questions.
+- [`docs/pre-work.md`](./docs/pre-work.md): what attendees install and sign up for before the day, so the 90 minutes fit.
 - [`docs/architecture.md`](./docs/architecture.md): how the four control points work, the two OAuth hops and which mechanism answers each, and what lives where in the repo.
 - [`docs/configuration.md`](./docs/configuration.md): what `/health` reports, which Arcade project `setup-arcade` writes to, the port, rotating the session secret, and what `bun run reset` puts back and what it keeps.
 - [`docs/faq.md`](./docs/faq.md): why the limits live in hooks, why the Slack DM comes from Alice, why Bun, using another model, and what we measured against a real Arcade project.
