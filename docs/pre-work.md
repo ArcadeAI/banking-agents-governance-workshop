@@ -1,6 +1,6 @@
 # Before the day
 
-The workshop is 90 minutes, so the installs and accounts happen before you arrive. This takes about 15 minutes. The portal keeps your place, so anything you finish now is done on the day.
+The session is short (90 minutes at AI Summit NYC, two hours online), so the installs and accounts happen before it starts. This takes about 15 minutes. The portal keeps your place, so anything you finish now is done on the day.
 
 ## Install
 
@@ -18,7 +18,7 @@ The workshop is 90 minutes, so the installs and accounts happen before you arriv
     cp .env.example .env
     uv sync --group evals
 
-Running `uv sync` now means nothing downloads over the venue wifi.
+Running `uv sync` now means nothing downloads during the session.
 
 ## Make your accounts
 
