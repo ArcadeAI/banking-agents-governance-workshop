@@ -8,4 +8,4 @@ This block runs in the attendee portal at https://workshop.arcade.dev. Sign in t
 
 - **Wrap-up**: the whole story once more, what you keep, and what gets removed.
 
-To run the whole thing yourself after the day, start from the README's Quickstart; the `start` and `capstone` tags are the two ends of the build.
+To run the whole thing yourself after the day, start from the README's Quickstart; the `start` and `capstone` tags point at the same commit, the code as the room ran it.
